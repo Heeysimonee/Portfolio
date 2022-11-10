@@ -7,9 +7,6 @@ const s3 = document.querySelector(".s3")
 const s4 = document.querySelector(".s4")
 const s5 = document.querySelector(".s5")
 
-
-
-
 menuSquare.addEventListener("mouseover",(e)=>{
     console.log(e)
     menuText.style.opacity =1;
@@ -34,13 +31,15 @@ window.onscroll = function (event) {
             square.classList.remove("square-active");
         });
         s1.classList.add("square-active")
+
         }
         if (scroll > 350 && scroll< 1800) {
             squareIndicator.forEach(square =>{
                 square.style.border = '1px solid var(--main-second)';
                 square.classList.remove("square-active")
             });
-            s2.classList.add("square-active")
+            s2.classList.add("square-active");
+            
             }
     }
     
