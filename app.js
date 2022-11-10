@@ -7,6 +7,8 @@ const s3 = document.querySelector(".s3");
 const s4 = document.querySelector(".s4");
 const s5 = document.querySelector(".s5");
 const ctTitle = document.querySelector('.ct-title');
+//const mailCopy = document.querySelector('.copy');
+//const send = document.querySelector('.send-wrapper');
 
 menuSquare.addEventListener("mouseover",(e)=>{
     console.log(e)
@@ -44,3 +46,14 @@ window.onscroll = function (event) {
     }
     }
     
+    mailCopy.addEventListener('click', ()=>{
+        navigator.clipboard.writeText("SimoneCattaneo05@gmail.com").then(() => {
+            console.log('Content copied to clipboard');
+            /* Resolved - text copied to clipboard successfully */
+          },() => {
+            console.error('Failed to copy');
+            /* Rejected - text failed to copy to the clipboard */
+          });
+        send.style.animation ="send 1.5s ease-in-out";
+
+    })
