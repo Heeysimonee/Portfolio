@@ -1,11 +1,12 @@
 const menuText = document.querySelector(".menu-txt");
 const menuSquare =  document.querySelector(".menu");
 const squareIndicator = document.querySelectorAll('.square');
-const s1 = document.querySelector(".s1")
-const s2 = document.querySelector(".s2")
-const s3 = document.querySelector(".s3")
-const s4 = document.querySelector(".s4")
-const s5 = document.querySelector(".s5")
+const s1 = document.querySelector(".s1");
+const s2 = document.querySelector(".s2");
+const s3 = document.querySelector(".s3");
+const s4 = document.querySelector(".s4");
+const s5 = document.querySelector(".s5");
+const ctTitle = document.querySelector('.ct-title');
 
 menuSquare.addEventListener("mouseover",(e)=>{
     console.log(e)
@@ -21,7 +22,6 @@ menuSquare.addEventListener("mouseout",(e)=>{
 });
 
 s1.classList.add("square-active")
-console.log(squareIndicator)
 window.onscroll = function (event) {
     let scroll = window.pageYOffset;
     console.log(scroll)
@@ -31,15 +31,16 @@ window.onscroll = function (event) {
             square.classList.remove("square-active");
         });
         s1.classList.add("square-active")
-
-        }
-        if (scroll > 350 && scroll< 1800) {
+    }
+    if(scroll >110){
+        ctTitle.style.animation ="fade 1s cubic-bezier(0.645, 0.045, 0.355, 1)";
+    }
+    if (scroll > 350 && scroll< 1800) {
             squareIndicator.forEach(square =>{
                 square.style.border = '1px solid var(--main-second)';
                 square.classList.remove("square-active")
             });
-            s2.classList.add("square-active");
-            
-            }
+            s2.classList.add("square-active");    
+    }
     }
     
