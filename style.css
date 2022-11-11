@@ -286,7 +286,9 @@ body::-webkit-scrollbar {
 .cnt-under-lineIn{
     animation: cnt-under 2.4s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
-
+.bounce{
+    animation: bounce 1s linear;
+}
 .line-end{
     margin: 0 auto;
     width: 1px;
@@ -390,4 +392,14 @@ color: var(--main-second);
         opacity: 0;
         width: 0;
     }
+}
+
+@keyframes bounce {
+    0%   { transform: scale(1,1) translateY(0); }
+    10%  { transform: scale(1.1,.9) translateY(0); }
+    30%  { transform: scale(.9,1.1)   translateY(-55px);}
+    50%  { transform: scale(1.05,.95) translateY(0); }
+    58%  { transform: scale(1,1) translateY(-7px); }
+    65%  { transform: scale(1,1) translateY(0);}
+    100% { transform: scale(1,1) translateY(0);}
 }

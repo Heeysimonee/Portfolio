@@ -17,6 +17,7 @@ const cntAboveLine =  document.querySelector('.cnt-above-line');
 const cntAboveText =  document.querySelector('.cnt-above-txt');
 const cntUnderText =  document.querySelector('.cnt-under-txt');
 const cntUnderLine = document.querySelector('.cnt-under-line');
+const bounce = document.querySelectorAll('.bounce');
 
 console.log("larghezza", window.innerWidth)
 console.log("altezza", window.innerHeight)
@@ -117,6 +118,8 @@ window.onscroll = function (event) {
     void cntUnderText.offsetWidth;
     cntUnderLine.classList.add("cnt-under-lineIn");
 
-   
+    let text = contactText.textContent //prima split
+    const myarr = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+    console.log(myarr, text.length, myarr.length)
 
    });
