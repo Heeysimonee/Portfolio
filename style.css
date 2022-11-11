@@ -264,8 +264,7 @@ body::-webkit-scrollbar {
     width: 30%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    gap: 5%;
+    gap: 2%;
 }
 .cnt-under-txt{
     opacity: 0;
@@ -273,12 +272,21 @@ body::-webkit-scrollbar {
     font-weight: 700;
     font-size: 1.3rem;
     letter-spacing: 5px;
-    color: var(--main-second);
-    margin-left: 6%;
+    color: var(--main-white);
+    margin-left: 23%;
 }
 .cnt-under-active{
     animation: cnt-under-txt 2s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
+.cnt-under-line{
+    width: 0;
+    height: 1px;
+    background: var(--main-white);
+}
+.cnt-under-lineIn{
+    animation: cnt-under 2.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
 .line-end{
     margin: 0 auto;
     width: 1px;
@@ -357,7 +365,7 @@ color: var(--main-second);
 @keyframes cnt-under-txt{
     0%{
         opacity: 0;
-        transform: translateY(-20px); 
+        transform: translateY(-10%); 
     }
     50%{
         opacity: 1;
@@ -367,5 +375,19 @@ color: var(--main-second);
         opacity: 1;
         transform: translateY(0px); 
         
+    }
+}
+@keyframes cnt-under{
+    0%{
+        opacity: 0;
+        width: 0%;
+    }
+    50%{
+        opacity: 1;
+        width: 20%;
+    }
+    100%{
+        opacity: 0;
+        width: 0;
     }
 }

@@ -16,6 +16,7 @@ const ctTitle = document.querySelector('.ct-title')
 const cntAboveLine =  document.querySelector('.cnt-above-line');
 const cntAboveText =  document.querySelector('.cnt-above-txt');
 const cntUnderText =  document.querySelector('.cnt-under-txt');
+const cntUnderLine = document.querySelector('.cnt-under-line');
 
 console.log("larghezza", window.innerWidth)
 console.log("altezza", window.innerHeight)
@@ -107,10 +108,15 @@ window.onscroll = function (event) {
     /* Rejected - text failed to copy to the clipboard */
     });
     e.preventDefault;
+
     cntUnderText.classList.remove("cnt-under-active");
     void cntUnderText.offsetWidth;
+    cntUnderText.classList.add("cnt-under-active");
 
-    cntUnderText.classList.add("cnt-under-active")
-    
+    cntUnderLine.classList.remove("cnt-under-lineIn");
+    void cntUnderText.offsetWidth;
+    cntUnderLine.classList.add("cnt-under-lineIn");
+
+   
 
    });
