@@ -118,8 +118,17 @@ window.onscroll = function (event) {
     void cntUnderText.offsetWidth;
     cntUnderLine.classList.add("cnt-under-lineIn");
 
-    let text = contactText.textContent //prima split
-    const myarr = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
-    console.log(myarr, text.length, myarr.length)
+    let text = contactText.textContent.split('') //prima split
+   
+   const bounceTxt = [...text].map((obj, index)=>{
+    return `<span class="bounce">` + obj + `</span>`
+   });
+   contactText.innerHTML = bounceTxt.join('');
+   //console.log(contactText.children)
 
+   const temp = document.querySelectorAll('.bounce');
+    for(let i=0; i < temp.length; i++){
+        console.log(i)
+        temp[i].style.animationDelay = `${i - (i - i/40)}s`;
+    }
    });
