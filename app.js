@@ -21,7 +21,6 @@ const bounce = document.querySelectorAll('.bounce');
 
 console.log("larghezza", window.innerWidth)
 console.log("altezza", window.innerHeight)
-console.log(contactText)
 //MENU
 menuSquare.addEventListener("mouseover",(e)=>{
     menuText.style.opacity =1;
@@ -82,7 +81,7 @@ window.onscroll = function (event) {
     //console.log(scroll)
     if (scroll < 350) {
         squareIndicator.forEach(square =>{
-            square.style.border = '1px solid var(--main-white)';
+            square.style.border = '1.5px solid var(--main-white)';
             square.classList.remove("square-active");
         });
         s1.classList.add("square-active")
@@ -92,7 +91,7 @@ window.onscroll = function (event) {
     }
     if (scroll > 350 && scroll< 1800) {
             squareIndicator.forEach(square =>{
-                square.style.border = '1px solid var(--main-second)';
+                square.style.border = '1.5px solid var(--main-second)';
                 square.classList.remove("square-active")
             });
             s2.classList.add("square-active");    
@@ -129,6 +128,6 @@ window.onscroll = function (event) {
    const temp = document.querySelectorAll('.bounce');
     for(let i=0; i < temp.length; i++){
         console.log(i)
-        temp[i].style.animationDelay = `${i - (i - i/40)}s`;
+        temp[i].style.animationDelay = `${i - (i - i/38)}s`;
     }
    });

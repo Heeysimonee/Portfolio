@@ -86,12 +86,12 @@ body::-webkit-scrollbar {
     width: 15px;
     height: 15px;
     border: 1px solid var(--main-white);
-    transition: all 0.8s cubic-bezier(.57,.21,.69,1.25);
+    transition: all 0.5s cubic-bezier(.57,.21,.69,1.25);
     cursor:pointer;
 }
 .square:hover{
     rotate: 45deg;    
-    background-color: var(--main-white);
+    /* background-color: var(--main-white); */
 }
 .square-active{
     border-radius:  100%;
@@ -120,7 +120,7 @@ body::-webkit-scrollbar {
 .greeting-p{
     margin-top: 3rem;
     color: var(--main-white);
-    font-weight: 200;
+    font-weight: 300;
     letter-spacing: 2px;
     font-size: 2.5rem;
 }
@@ -129,7 +129,7 @@ body::-webkit-scrollbar {
     margin: 6% 0 ;
     line-height: 3.5rem;
     font-size: 2.2rem;
-    font-weight: 200;
+    font-weight: 300;
     width: 50%;
     animation: fade 0.8s cubic-bezier(0.645, 0.045, 0.355, 1);
     animation-fill-mode: forwards;
@@ -139,16 +139,17 @@ body::-webkit-scrollbar {
 }
 .bolder{
     border-bottom: 2px solid var(--main-second);
-    font-weight: 300;
+    font-weight: 500;
 }
 
 .line-container{
     position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: space-around;
-    left:830px;
-    top:-308px;
+    left:72%;
+    top:-81%;
     height: 708px;
     width: 15px;
     gap: 5px;
@@ -162,7 +163,7 @@ body::-webkit-scrollbar {
 }
 .scroll-p{
     opacity: 0;
-    filter: drop-shadow(-2.5px -2px 0px rgba(4, 43, 102, 0.473));
+    filter: drop-shadow(-1.5px -1px 0px rgba(4, 43, 102, 0.473));
     font-size: 1.5rem;
     writing-mode: vertical-rl;
     text-orientation: upright;
@@ -289,7 +290,7 @@ body::-webkit-scrollbar {
     animation: cnt-under 2.4s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 .bounce{
-    animation: bounce 0.4s linear ;
+    animation: bounce 0.3s linear;
     
 }
 .line-end{
@@ -399,6 +400,6 @@ color: var(--main-second);
 
 @keyframes bounce {
     0%   { transform: translateY(0); }
-    50%  { transform: translateY(-3px);}
+    50%  { transform: translateY(-5px);}
     100% { transform: translateY(0);}
 }
