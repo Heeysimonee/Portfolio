@@ -116,10 +116,10 @@ document.addEventListener("mouseout", (e) =>{
     s1.classList.add("square-active")
     window.onscroll = function (event) {
     let scroll = window.pageYOffset;
-    console.log(scroll)
+    //console.log(scroll)
     if (scroll < 350) {
         squareIndicator.forEach(square =>{
-        square.style.border = '1.5px solid var(--main-white)';
+        square.style.border = '1px solid var(--main-white)';
         square.classList.remove("square-active");
         });
     s1.classList.add("square-active")
@@ -131,10 +131,27 @@ document.addEventListener("mouseout", (e) =>{
     }
     if (scroll > 350 && scroll< 1800) {
         squareIndicator.forEach(square =>{
-            square.style.border = '1.5px solid var(--main-second)';
+            square.style.border = '1px solid var(--main-second)';
             square.classList.remove("square-active")
             });
     s2.classList.add("square-active");    
     }
     }
     
+  // All values are measured in pixels
+window.addEventListener('scroll', () => {
+ 
+    // Distance from the top scrolled
+    const scrollOffset = window.pageYOffset;
+    // Length of the user's browser
+    const browserViewHeight = window.innerHeight;
+    // Height of the entire DOM
+    const documentHeight = document.body.clientHeight
+    const totalAmountScrolled = scrollOffset + browserViewHeight
+    // Bottom of page reached. 
+    console.log("")
+    console.log("Distance from the top scrolled:",scrollOffset)
+    console.log("Length of the user's browser:",browserViewHeight)
+    console.log("Height of the entire DOM:",documentHeight)
+    console.log("Bottom of page reached:",totalAmountScrolled)
+   })
