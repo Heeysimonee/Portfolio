@@ -12,12 +12,16 @@ const paperPlaneWrapper = document.querySelector('.paper-plane');
 const paperPlane = document.querySelector("#plane");
 const contactTextWrapper = document.querySelector(".contact-txt")
 const contactText = document.querySelector(".change-txt")
-const ctTitle = document.querySelector('.ct-title')
 const cntAboveLine =  document.querySelector('.cnt-above-line');
 const cntAboveText =  document.querySelector('.cnt-above-txt');
 const cntUnderText =  document.querySelector('.cnt-under-txt');
 const cntUnderLine = document.querySelector('.cnt-under-line');
 const bounce = document.querySelectorAll('.bounce');
+const heroLineEnd = document.querySelector('.line-end');
+//CERTIFICATION SECTION
+const certificationBg = document.querySelector('.certification')
+const ctTitle = document.querySelector('#ct-title');
+const ctLine = document.querySelector('.ct-line');
 
 console.log("larghezza", window.innerWidth)
 console.log("altezza", window.innerHeight)
@@ -74,30 +78,6 @@ document.addEventListener("mouseout", (e) =>{
     }
 })
 
-//NAV INDICATOR
-s1.classList.add("square-active")
-window.onscroll = function (event) {
-    let scroll = window.pageYOffset;
-    //console.log(scroll)
-    if (scroll < 350) {
-        squareIndicator.forEach(square =>{
-            square.style.border = '1.5px solid var(--main-white)';
-            square.classList.remove("square-active");
-        });
-        s1.classList.add("square-active")
-    }
-    if(scroll >110){
-        ctTitle.style.animation ="fade 1s cubic-bezier(0.645, 0.045, 0.355, 1)";
-    }
-    if (scroll > 350 && scroll< 1800) {
-            squareIndicator.forEach(square =>{
-                square.style.border = '1.5px solid var(--main-second)';
-                square.classList.remove("square-active")
-            });
-            s2.classList.add("square-active");    
-    }
-    }
-    
     //COPY CONTACT
     paperPlaneWrapper.addEventListener('click', (e)=>{
     navigator.clipboard.writeText("SimoneCattaneo05@gmail.com").then(() => {
@@ -131,3 +111,30 @@ window.onscroll = function (event) {
         temp[i].style.animationDelay = `${i - (i - i/38)}s`;
     }
    });
+
+   //SCROLL EVENTS
+    s1.classList.add("square-active")
+    window.onscroll = function (event) {
+    let scroll = window.pageYOffset;
+    console.log(scroll)
+    if (scroll < 350) {
+        squareIndicator.forEach(square =>{
+        square.style.border = '1.5px solid var(--main-white)';
+        square.classList.remove("square-active");
+        });
+    s1.classList.add("square-active")
+    }
+    if(scroll>180){
+        ctTitle.style.animation ="fade 1s cubic-bezier(0.645, 0.045, 0.355, 1)";
+        ctLine.style.animation ="line-certification 3s cubic-bezier(0.645, 0.045, 0.355, 1)"
+        ctLine.style.animationFillMode = "forwards";
+    }
+    if (scroll > 350 && scroll< 1800) {
+        squareIndicator.forEach(square =>{
+            square.style.border = '1.5px solid var(--main-second)';
+            square.classList.remove("square-active")
+            });
+    s2.classList.add("square-active");    
+    }
+    }
+    
