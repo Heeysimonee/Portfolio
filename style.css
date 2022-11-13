@@ -105,7 +105,7 @@ body::-webkit-scrollbar {
     height: 100%;
     position: relative;
     padding: 10% 20%;
-    font-size: 1.8rem; 
+    font-size: 1.8rem;
 }
 .main h1{
     color: var(--main-white);
@@ -127,14 +127,14 @@ body::-webkit-scrollbar {
 
 .p-fade{
     margin: 6% 0 3% 0 ;
-    line-height: 3.5rem;
+    line-height: 3rem;
     font-size: 2.2rem;
     font-weight: 300;
     width: 50%;
     animation: fade 0.8s cubic-bezier(0.645, 0.045, 0.355, 1);
     animation-fill-mode: forwards;
 }
-.greeting span{
+.title span{
     color: var(--main-second);
 }
 .bolder{
@@ -143,16 +143,17 @@ body::-webkit-scrollbar {
 }
 /*LINE SCROLL*/
 .line-container{
-    position: relative;
+    position: absolute;
+    left:63.2%;
+    top:0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: space-around;
-    left:72%;
-    top:-81%;
-    height: 808px;
-    width: 15px;
     gap: 5px;
+    height: 100%;
+    width: 15px;
+    padding-top: 18%;
 }
 
 .line{
@@ -180,7 +181,7 @@ body::-webkit-scrollbar {
     margin: 0 auto;
     width: 1px;
     height: 100%;
-    background: linear-gradient(var(--main-white)30.4%, var(--main-second)0)
+    background: var(--main-white);
 }
 
 /*CONTACT BUTTON*/
@@ -351,16 +352,8 @@ body::-webkit-scrollbar {
         height: 0px;
     }
     100%{opacity: 1;
-        height: 600px;}
+        height: 200%;}
 }
-@keyframes line-end {
-    0%{opacity: 0;
-        height: 0px;
-    }
-    100%{opacity: 1;
-        height: 450px;}
-}
-
 @keyframes cnt-above{
     0%{
         opacity: 0;
