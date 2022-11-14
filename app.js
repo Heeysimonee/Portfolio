@@ -19,9 +19,14 @@ const cntUnderLine = document.querySelector('.cnt-under-line');
 const bounce = document.querySelectorAll('.bounce');
 const heroLineEnd = document.querySelector('.line-end');
 //CERTIFICATION SECTION
-const certificationBg = document.querySelector('.certification')
+const certificationBg = document.querySelector('.certification');
+const ctLineWrapper = document.querySelector('.ct-line-wrapper');
 const ctTitle = document.querySelector('#ct-title');
 const ctLine = document.querySelector('.ct-line');
+const ctText = document.querySelector('.ct-txt');
+const education = document.querySelector('#education')
+const certificate = document.querySelector('#certificate')
+const ctCertificate = document.querySelector('.ct-certificate');
 
 console.log("larghezza", window.innerWidth)
 console.log("altezza", window.innerHeight)
@@ -70,11 +75,6 @@ document.addEventListener("mouseout", (e) =>{
     contact.style.border ="1px solid var(--main-white)";
     paperPlaneWrapper.style.borderRight ="1px solid var(--main-white)"; 
     paperPlane.style.rotate ="0deg";
-    contactWrapper.style.filter="none";
-    cntAboveLine.style.animation = "none"
-    cntAboveLine.style.animation = "cnt-above-out 0.8s cubic-bezier(0.645, 0.045, 0.355, 1)"
-    cntAboveLine.style.animationFillMode = "forwards";
-    cntAboveText.style.animation = "none"
     }
 })
 
@@ -112,6 +112,40 @@ document.addEventListener("mouseout", (e) =>{
     }
    });
 
+   //ABOUT ME SMALL MENU
+    document.addEventListener('click', (e)=>{
+    if(e.target == certificate){
+        ctText.style.transition = "all 0s linear"
+        ctLineWrapper.classList.remove("line-animation");
+        void cntUnderText.offsetWidth;
+        ctLineWrapper.classList.add("line-animation");
+        ctText.style.opacity = "0";
+        ctText.style.pointerEvent= "none";
+        ctText.style.width= '0';
+        ctText.style.transition = "width 0.2s linear 1.2s"
+        
+        ctCertificate.style.opacity ='1';
+        ctCertificate.style.width ='100%';
+        certificate.classList.add('ct-menu-active');
+        education.classList.remove('ct-menu-active');
+
+    }
+    if(e.target == education){
+        ctLineWrapper.classList.remove("line-animation");
+        void cntUnderText.offsetWidth;
+        ctLineWrapper.classList.add("line-animation");
+        ctText.style.opacity ="1"
+        ctText.style.pointerEvent = "auto";
+        ctText.style.transition = "all 0.2s linear 1.2s"
+        ctText.style.width = "100%"
+        ctCertificate.style.width = "0";
+        ctCertificate.style.opacity = '0';
+        education.classList.add('ct-menu-active');
+        certificate.classList.remove('ct-menu-active');
+        ctCertificate.style.transition = "opacity 0.1s linear"
+    }
+   })
+
    //SCROLL EVENTS
     s1.classList.add("square-active")
     window.onscroll = function (event) {
@@ -124,12 +158,12 @@ document.addEventListener("mouseout", (e) =>{
         });
     s1.classList.add("square-active")
     }
-    if(scroll>180){
+    if(scroll>190){
         ctTitle.style.animation ="fade 1s cubic-bezier(0.645, 0.045, 0.355, 1)";
         ctLine.style.animation ="line-certification 3s cubic-bezier(0.645, 0.045, 0.355, 1)"
         ctLine.style.animationFillMode = "forwards";
     }
-    if (scroll > 350 && scroll< 1800) {
+    if (scroll > 330 && scroll< 1800) {
         squareIndicator.forEach(square =>{
             square.style.border = '1px solid var(--main-second)';
             square.classList.remove("square-active")
