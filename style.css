@@ -251,7 +251,6 @@ body::-webkit-scrollbar {
 }
 #plane{
     pointer-events: none;
-    
 }
 .contact-above{
     height: 5%;
@@ -335,6 +334,7 @@ body::-webkit-scrollbar {
 .ct-menu-active{
     border-bottom: 1px solid var(--main-second);
     font-weight: 500;
+    pointer-events: none;
 }
 #ct-title span {
     color: #1e7da3;
@@ -472,8 +472,6 @@ body::-webkit-scrollbar {
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     color:var(--main-white);
-   
-
 }
 
 /*ANIMATION*/
@@ -517,6 +515,14 @@ body::-webkit-scrollbar {
     }
     100%{
         opacity: 1;
+    }
+}
+@keyframes cnt-above-txtOut{
+    0%{
+        opacity: 1; 
+    }
+    100%{
+        opacity: 0;
     }
 }
 @keyframes cnt-under-txt{

@@ -59,13 +59,12 @@ if(e.target == contactTextWrapper || e.target == paperPlaneWrapper){
     paperPlane.style.rotate ="45deg";
     paperPlane.style.pointerEvent ="auto";
     contactWrapper.style.filter="drop-shadow(-4px 4px 0px rgba(4, 43, 102, 0.473))";
-    
     }
-    if(e.target == paperPlaneWrapper){
-        cntAboveLine.style.animation = "cnt-above 0.8s cubic-bezier(0.645, 0.045, 0.355, 1)"
-        cntAboveLine.style.animationFillMode = "forwards";
-        cntAboveText.style.animation = "cnt-above-txt 1s cubic-bezier(0.645, 0.045, 0.355, 1)"
-        cntAboveText.style.animationFillMode = "forwards";
+if(e.target == paperPlaneWrapper){
+    cntAboveLine.style.animation = "cnt-above 0.8s cubic-bezier(0.645, 0.045, 0.355, 1)"
+    cntAboveLine.style.animationFillMode = "forwards";
+    cntAboveText.style.animation = "cnt-above-txt 1s cubic-bezier(0.645, 0.045, 0.355, 1)"
+    cntAboveText.style.animationFillMode = "forwards";
     }
 })
 document.addEventListener("mouseout", (e) =>{
@@ -79,18 +78,17 @@ document.addEventListener("mouseout", (e) =>{
     contact.style.border ="1px solid var(--main-white)";
     paperPlaneWrapper.style.borderRight ="1px solid var(--main-white)"; 
     paperPlane.style.rotate ="0deg";
+    contactWrapper.style.filter="none";
+    cntAboveLine.style.animation = "cnt-above-out 0.8s cubic-bezier(0.645, 0.045, 0.355, 1)";
+    cntAboveLine.style.animationFillMode = "forwards";
+    cntAboveText.style.animation = "cnt-above-txtOut 0.8s cubic-bezier(0.645, 0.045, 0.355, 1)"
+    cntAboveText.style.animationFillMode = "forwards";
     }
 })
 
     //COPY CONTACT
     paperPlaneWrapper.addEventListener('click', (e)=>{
-    navigator.clipboard.writeText("SimoneCattaneo05@gmail.com").then(() => {
-    console.log('Content copied to clipboard');
-    /* Resolved - text copied to clipboard successfully */
-    },() => {
-    console.error('Failed to copy');
-    /* Rejected - text failed to copy to the clipboard */
-    });
+    navigator.clipboard.writeText("SimoneCattaneo05@gmail.com");
     e.preventDefault;
 
     cntUnderText.classList.remove("cnt-under-active");
@@ -101,13 +99,12 @@ document.addEventListener("mouseout", (e) =>{
     void cntUnderText.offsetWidth;
     cntUnderLine.classList.add("cnt-under-lineIn");
 
-    let text = contactText.textContent.split('') //prima split
+    let text = contactText.textContent.split('') 
    
-   const bounceTxt = [...text].map((obj, index)=>{
+    const bounceTxt = [...text].map((obj, index)=>{
     return `<span class="bounce">` + obj + `</span>`
-   });
-   contactText.innerHTML = bounceTxt.join('');
-   //console.log(contactText.children)
+    });
+    contactText.innerHTML = bounceTxt.join('');
 
    const temp = document.querySelectorAll('.bounce');
     for(let i=0; i < temp.length; i++){
@@ -133,7 +130,6 @@ document.addEventListener("mouseout", (e) =>{
         ctCertificate.style.transition = "all 0.2s linear 1.2s"
         certificate.classList.add('ct-menu-active');
         education.classList.remove('ct-menu-active');
-
     }
     if(e.target == education){
         ctLineWrapper.classList.remove("line-animation");
