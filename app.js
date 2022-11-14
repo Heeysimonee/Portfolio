@@ -27,6 +27,10 @@ const ctText = document.querySelector('.ct-txt');
 const education = document.querySelector('#education')
 const certificate = document.querySelector('#certificate')
 const ctCertificate = document.querySelector('.ct-certificate');
+const ctInfoWrapper = document.querySelectorAll('.ct-info-wrapper'); //controlla
+const studyOne = document.querySelector('.study01')
+const studyTwo = document.querySelector('.study02')
+const studyThree = document.querySelector('.study03')
 
 console.log("larghezza", window.innerWidth)
 console.log("altezza", window.innerHeight)
@@ -146,6 +150,7 @@ document.addEventListener("mouseout", (e) =>{
         certificate.classList.remove('ct-menu-active');
     }
    })
+  
 
    //SCROLL EVENTS
     s1.classList.add("square-active")
@@ -160,19 +165,36 @@ document.addEventListener("mouseout", (e) =>{
     s1.classList.add("square-active")
     }
     if(scroll>190){
-        ctTitle.style.animation ="fade 1s cubic-bezier(0.645, 0.045, 0.355, 1)";
         ctLine.style.animation ="line-certification 3s cubic-bezier(0.645, 0.045, 0.355, 1)"
         ctLine.style.animationFillMode = "forwards";
+        ctTitle.style.animation ="fade 1s cubic-bezier(0.645, 0.045, 0.355, 1)";
     }
-    if (scroll > 330 && scroll< 1800) {
+    if(scroll > 330 && scroll< 1800) {
+        
         squareIndicator.forEach(square =>{
             square.style.border = '1px solid var(--main-second)';
             square.classList.remove("square-active")
             });
     s2.classList.add("square-active");    
     }
+    if(scroll >450){
+        studyOne.style.animation = "fade 1s cubic-bezier(0.645, 0.045, 0.355, 1)"
+        studyOne.style.animationFillMode = "forwards";
+    }
+    if(scroll >550){
+        studyTwo.style.animation = "fade 1s cubic-bezier(0.645, 0.045, 0.355, 1)0.2s"
+        studyTwo.style.animationFillMode = "forwards";
+    }
+    if(scroll >650){
+        studyThree.style.animation = "fade 1s cubic-bezier(0.645, 0.045, 0.355, 1) 0.4s"
+        studyThree.style.animationFillMode = "forwards";
+    }
     }
     
+
+
+
+
   // All values are measured in pixels
 window.addEventListener('scroll', () => {
  
