@@ -115,17 +115,18 @@ document.addEventListener("mouseout", (e) =>{
    //ABOUT ME SMALL MENU
     document.addEventListener('click', (e)=>{
     if(e.target == certificate){
-        ctText.style.transition = "all 0s linear"
+        // ctText.style.transition = "all 0s linear"
         ctLineWrapper.classList.remove("line-animation");
         void cntUnderText.offsetWidth;
         ctLineWrapper.classList.add("line-animation");
         ctText.style.opacity = "0";
         ctText.style.pointerEvent= "none";
-        ctText.style.width= '0';
+        ctText.style.width= '1';
+        ctText.style.overflow = "hidden";
         ctText.style.transition = "width 0.2s linear 1.2s"
-        
         ctCertificate.style.opacity ='1';
         ctCertificate.style.width ='100%';
+        ctCertificate.style.transition = "all 0.2s linear 1.2s"
         certificate.classList.add('ct-menu-active');
         education.classList.remove('ct-menu-active');
 
@@ -140,9 +141,9 @@ document.addEventListener("mouseout", (e) =>{
         ctText.style.width = "100%"
         ctCertificate.style.width = "0";
         ctCertificate.style.opacity = '0';
+        ctCertificate.style.transition = "opacity 0.2s linear"
         education.classList.add('ct-menu-active');
         certificate.classList.remove('ct-menu-active');
-        ctCertificate.style.transition = "opacity 0.1s linear"
     }
    })
 
