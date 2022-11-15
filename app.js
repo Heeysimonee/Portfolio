@@ -45,13 +45,14 @@ menuSquare.addEventListener("mouseout",(e)=>{
     menuText.style.opacity =0;
     menuText.style.transition ="all 0.3s ease-in-out";
 });
-//CONTACT
+//CONTACT BUTTON
+
 document.addEventListener("mouseover", (e) =>{
 if(e.target == contactTextWrapper || e.target == paperPlaneWrapper){
     contactWrapper.style.backgroundPosition= "left";
     contactText.textContent ="SimoneCattaneo05@gmail.com"
     contactText.style.letterSpacing="0px";
-    contactText.style.fontSize="1.9rem"
+    contactText.style.fontSize="var(--main-fs-button-small)"
     contactText.style.fontWeight="300";
     contactText.style.color="var(--main-white)";
     contact.style.border ="none";
@@ -71,7 +72,7 @@ document.addEventListener("mouseout", (e) =>{
     if(e.target == contactTextWrapper || e.target == paperPlaneWrapper){
     contactWrapper.style.backgroundPosition= "right";
     contactText.textContent ="Get in touch"
-    contactText.style.fontSize="2.8rem"
+    contactText.style.fontSize="var(--main-fs-button-big)"
     contactText.style.fontWeight="800";
     contactText.style.color="var(--main-second)";
     contactText.style.letterSpacing="2px";
@@ -115,6 +116,7 @@ document.addEventListener("mouseout", (e) =>{
 
    //ABOUT ME SMALL MENU
     document.addEventListener('click', (e)=>{
+    ctCertificate.style.left ="-2000px";
     if(e.target == certificate){
         // ctText.style.transition = "all 0s linear"
         ctLineWrapper.classList.remove("line-animation");
@@ -128,6 +130,8 @@ document.addEventListener("mouseout", (e) =>{
         ctCertificate.style.opacity ='1';
         ctCertificate.style.width ='100%';
         ctCertificate.style.transition = "all 0.2s linear 1.2s"
+        ctCertificate.style.transition = "left 0.01s linear 1s"
+        ctCertificate.style.left = "0";
         certificate.classList.add('ct-menu-active');
         education.classList.remove('ct-menu-active');
     }
