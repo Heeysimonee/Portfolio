@@ -14,14 +14,14 @@
     /*FONT SIZE*/
     --main-fs-text: clamp(1.2rem, 0.85vw, 4rem);
     --main-fs-text-small: clamp(0.9rem, 0.7vw, 1.7rem);
-    --main-fs-title: clamp(5rem, 5vw, 22rem);
-    --main-fs-subtitle: clamp(3rem, 1.4vw, 18rem);
+    --main-fs-title: clamp(5.5rem, 5vw, 22rem);
+    --main-fs-subtitle: clamp(2.5rem, 1.4vw, 18rem);
     --main-fs-subtitle-smaller: clamp(1.6rem, 1.2vw, 17rem);
     --main-fs-button-big: clamp(1rem, 1.4vw, 10rem);
     --main-fs-button-small: clamp(1.3rem, 1vw, 8rem);
     /*LINE SPACING*/
     --main-lh-title: clamp(6.5rem, 5vw, 15rem);
-    --main-lh-subtitle: clamp(2.2rem, 1.8vw, 5rem);
+    --main-lh-subtitle: clamp(3rem, 1.8vw, 5rem);
 }
 html{
     font-size:62.5%;
@@ -135,6 +135,7 @@ body::-webkit-scrollbar {
     letter-spacing: 2px;
     line-height: var(--main-lh-title);
     filter: drop-shadow(-5px -2px 0px rgba(4, 43, 102, 0.473));
+    
 }
 .greeting-p{
     margin-top: 3rem;
@@ -142,6 +143,7 @@ body::-webkit-scrollbar {
     font-weight: 300;
     letter-spacing: 2px;
     font-size: var(--main-fs-subtitle);
+    line-height: var(--main-lh-subtitle);
 }
 
 .p-fade{
@@ -602,15 +604,35 @@ body::-webkit-scrollbar {
     .main{
         padding: 0 8%;
     }
-    .greeting-p{
-        margin-top: 1rem;
+    .section-indicator{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    position: fixed;
+    height: 5vh;
+    width: 100vw;
+    bottom: 0;
+    z-index:99;
     }
+    .square{
+        height: 12px;
+        width: 12px;
+    }
+    .title{
+        letter-spacing: 0;
+    }
+    .greeting-p{
+        margin-top: 2rem;
+    }
+   
     .p-fade{
         padding:10% 0;
     }
     .bg{
     height: 8%;
-    width: 90%;
+    width: 100%;
     }
     .contact-above{
         height: 5%;
@@ -618,7 +640,7 @@ body::-webkit-scrollbar {
     }
     .contact-under{
         height: 5%;
-        width: 90%;
+        width: 100%;
     }
     .cnt-under-txt{
         width: 65%;
@@ -648,7 +670,7 @@ body::-webkit-scrollbar {
         display: none;
     }
     .ct-txt-container{
-        width: 100%;
+        width: 90%;
         height: 80%;
         display: flex;
         position: relative;
@@ -665,5 +687,8 @@ body::-webkit-scrollbar {
     justify-content: space-around;
     gap: 10px;
     transition: opacity 0.8s cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
+    .certificate-container img{
+        width: 100%;
     }
 }
