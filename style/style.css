@@ -19,7 +19,7 @@
     --main-fs-title: clamp(6.5rem, 5vw, 22rem);
     --main-fs-subtitle: clamp(2.5rem, 1.4vw, 18rem);
     --main-fs-subtitle-smaller: clamp(2rem, 1.2vw, 17rem);
-    --main-fs-button-big: clamp(1.55rem, 1.8vw, 10rem);
+    --main-fs-button-big: clamp(3rem, 1.8vw, 10rem);
     --main-fs-button-small: clamp(1.55rem, 1vw, 8rem);
     /*LINE SPACING*/
     --main-lh-title: clamp(6.5rem, 5vw, 15rem);
