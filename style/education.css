@@ -246,10 +246,12 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        
     }
     .ct-main h1{
-        padding-top:5rem;
-        line-height: 3rem;
+        width: 100%;
+        margin-top:5rem;
+        line-height: 5rem;
     }
     .ct-main-menu{
         margin: 10% 0 0 0 ;
