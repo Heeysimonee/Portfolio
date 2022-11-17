@@ -12,7 +12,7 @@
 .ct-main{
     height: 100%;
     animation-fill-mode: forwards;
-    padding: 10% 20%;
+    padding: 10%;
 }
 .ct-main h1{
     width: 100%;
@@ -247,7 +247,8 @@
         width: 100%;
         margin-top:5rem;
         line-height: 5rem;
-        background-color: red;
+        
+        font-size: clamp(5rem, 16vw, 6.5rem);
     }
     .ct-main-menu{
         margin: 10% 0 0 0 ;
@@ -262,7 +263,7 @@
         height: 100%;
         display: flex;
         align-items: center;
-        overflow: hidden;
+        overflow-x: hidden;
     }
     .ct-line-wrapper{
         align-items: center;
@@ -287,7 +288,9 @@
     .orange{
         display: none;
     }
-    
+    .ct-certificate{
+        overflow-y: hidden;
+    }
     .certificate-container img{
         width: 90%;
     }
