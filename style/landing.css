@@ -335,10 +335,12 @@
 }
 
 @media screen and (min-width:321px) and (max-width: 480px){
+    body{
+        overflow-x: hidden;
+    }
     .main{
-        padding: 10% 8%;
+        padding: 6vh 8%;
         align-items: center;
-       
     }
     .section-indicator{
     flex-direction: row;

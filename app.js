@@ -116,36 +116,35 @@ document.addEventListener("mouseout", (e) =>{
 
    //ABOUT ME SMALL MENU
     document.addEventListener('click', (e)=>{
-    ctCertificate.style.left ="-2000px";
     if(e.target == certificate){
-        // ctText.style.transition = "all 0s linear"
-        ctLineWrapper.classList.remove("line-animation");
-        void cntUnderText.offsetWidth;
-        ctLineWrapper.classList.add("line-animation");
-        ctText.style.opacity = "0";
-        ctText.style.pointerEvent= "none";
-        ctText.style.width= '1';
+        ctCertificate.style.opacity = '0';
+        ctCertificate.style.width = "0";
+        ctText.style.width = "0"
+        ctText.style.opacity = "0"
         ctText.style.overflow = "hidden";
-        ctText.style.transition = "width 0.2s linear 1.2s"
+        ctText.style.transition = "all .1s linear"
+        ctLineWrapper.classList.remove("change-menu-animation");
+        void cntUnderText.offsetWidth;
+        ctLineWrapper.classList.add("change-menu-animation");        
         ctCertificate.style.opacity ='1';
         ctCertificate.style.width ='100%';
-        ctCertificate.style.transition = "all 0.2s linear 1.2s"
-        ctCertificate.style.transition = "left 0.01s linear 1s"
-        ctCertificate.style.left = "0";
+        ctCertificate.style.transition = "all 0.2s linear 1.5s"
         certificate.classList.add('ct-menu-active');
         education.classList.remove('ct-menu-active');
     }
     if(e.target == education){
-        ctLineWrapper.classList.remove("line-animation");
-        void cntUnderText.offsetWidth;
-        ctLineWrapper.classList.add("line-animation");
-        ctText.style.opacity ="1"
-        ctText.style.pointerEvent = "auto";
-        ctText.style.transition = "all 0.2s linear 1.2s"
-        ctText.style.width = "100%"
-        ctCertificate.style.width = "0";
+        ctText.style.width = "0"
+        ctText.style.opacity = "0"
         ctCertificate.style.opacity = '0';
-        ctCertificate.style.transition = "opacity 0.2s linear"
+        ctCertificate.style.width = "0";
+        ctCertificate.style.overflow = "hidden";
+        ctCertificate.style.transition = "all .1s linear"
+        ctLineWrapper.classList.remove("change-menu-animation");
+        void cntUnderText.offsetWidth;
+        ctLineWrapper.classList.add("change-menu-animation");
+        ctText.style.opacity ="1"
+        ctText.style.width = "100%"
+        ctText.style.transition = "width 0.2s ease-in-out 1.5s"
         education.classList.add('ct-menu-active');
         certificate.classList.remove('ct-menu-active');
     }
