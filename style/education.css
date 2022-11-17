@@ -236,9 +236,7 @@
 }
 
 @media screen and (min-width:321px) and (max-width: 480px){
-    /* .certification{
-        display: none;
-    } */
+   
     .ct-main{
         padding: 10%;
         display: flex;
@@ -249,6 +247,7 @@
         width: 100%;
         margin-top:5rem;
         line-height: 5rem;
+        background-color: red;
     }
     .ct-main-menu{
         margin: 10% 0 0 0 ;
@@ -263,7 +262,7 @@
         height: 100%;
         display: flex;
         align-items: center;
-        overflow-y: hidden;
+        overflow: hidden;
     }
     .ct-line-wrapper{
         align-items: center;
