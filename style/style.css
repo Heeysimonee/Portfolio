@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import './education.css';
+@import './landing.css';
 
 *{
     margin: 0;
@@ -142,99 +144,7 @@ body::-webkit-scrollbar {
 /*MEDIA QUERY*/
 
 /*   MOBILE    */
-@media screen and (max-width: 840px){
-    .main{
-        padding: 8%;
-        align-items: center;
-    }
-    .section-indicator{
-    flex-direction: row;
-    height: 5vh;
-    width: 100vw;
-    bottom: 0;
-    z-index:99;
-    }
-    .title{
-        letter-spacing: 2px;
-    }
-    .main-hello{
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    .greeting-p{
-        margin-top: 2rem;
-    }
-    .ctn-button-wrapper{
-        height: 20%;
-        width: 100%;
-        }
-    .contact-above{
-        height: 5%;
-        width: 100%;
-    }
-    .contact-under{
-        height: 5%;
-        width: 100%;
-    }
-    .cnt-under-txt{
-        width: 65%;
-    }
-    .line-container{
-        display: none;
-    }
-    /*ABOUT ME SECTION*/
-    .ct-main{
-        padding:0% 5% 10% 5%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-    .ct-main h1{
-        padding-top:5rem;
-        line-height: 3rem;
-    }
-    .ct-main-menu{
-        margin: 10% 0 0 0 ;
-        justify-content: center;
-    }
-    .ct-txt-container{
-        width:100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-    }
-    .ct-line-wrapper{
-        align-items: center;
-        
-        padding: 15% 0;
-    }
-    .ct-txt{
-        justify-content: space-between;
-        padding:0px !important;
-        height: 80%;
-    }
-    
-    .uni-align{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-    .uni-align h4{
-        width: 100%;
-    }
-    .uni-align .small-sub {
-        line-height: var(--main-lh-subtitle-small);
-    }
-    .orange{
-        display: none;
-    }
-    .certificate-container img{
-        width: 90%;
-    }
-}
+
 @media screen and (max-width: 480px){
     .main{
         padding: 8%;
