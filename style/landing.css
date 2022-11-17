@@ -316,7 +316,6 @@
         font-size: 6rem;
         letter-spacing: 0;
     }
-   
     .p-fade{
         padding:2% 0 0 0;
         font-size: 1.4rem;
@@ -382,17 +381,17 @@
     .main{
         padding: 6vh 8%;
         align-items: center;
-        background-color: red;
     }
     .section-indicator{
-    flex-direction: row;
-    height: 5vh;
-    width: 100vw;
-    bottom: 0;
+    flex-direction: column;
+    height: 100vh;
+    width: 8vw;
+    right: 0;
     z-index:99;
+    gap: 2.5%;
     }
     .title{
-        letter-spacing: 2px;
+        letter-spacing: 5px;
     }
     .main-hello{
         height: 100%;
@@ -406,7 +405,8 @@
     }
     .ctn-button-wrapper{
         height: 20%;
-        width: 100%;
+        width: 80%;
+        margin-left: 10% ;
         }
     .contact-above{
         height: 5%;
@@ -421,5 +421,5 @@
     }
     .line-container{
         display: none;
-    }
+    } 
 }

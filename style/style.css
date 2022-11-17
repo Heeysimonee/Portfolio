@@ -144,3 +144,19 @@ body::-webkit-scrollbar {
     }
 }
 
+@media screen and (min-width:481px) and (max-width: 768px){
+    :root{
+        /*FONT SIZE*/
+        --main-fs-text: clamp(1.6rem, 0.85vw, 4rem);
+        --main-fs-text-small: clamp(0.9rem, 2.5vw, 1.7rem);
+        --main-fs-title: clamp(9rem, 13vw, 12rem);
+        --main-fs-subtitle: clamp(2.5rem, 4.5vw, 18rem);
+        --main-fs-subtitle-smaller: clamp(2rem, 3vw, 17rem);
+        --main-fs-button-big: clamp(3rem, 6vw, 10rem);
+        --main-fs-button-small: clamp(1.55rem, 3.5vw, 8rem);
+        /*LINE SPACING*/
+        --main-lh-title: clamp(6.5rem, 14vw, 15rem);
+        --main-lh-subtitle: clamp(3rem, 3vw, 5rem);
+        --main-lh-subtitle-small: clamp(2.5rem, 4.5vw, 5rem);
+    }
+}
