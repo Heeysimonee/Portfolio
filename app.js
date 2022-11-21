@@ -1,5 +1,5 @@
-const menuText = document.querySelector(".menu-txt");
-const menuSquare =  document.querySelector(".menu");
+const menu = document.querySelector(".menu");
+const menuWrap = document.querySelector(".menu-wrap");
 const squareIndicator = document.querySelectorAll('.square');
 const s1 = document.querySelector(".s1");
 const s2 = document.querySelector(".s2");
@@ -24,27 +24,33 @@ const ctLineWrapper = document.querySelector('.ct-line-wrapper');
 const ctTitle = document.querySelector('#ct-title');
 const ctLine = document.querySelector('.ct-line');
 const ctText = document.querySelector('.ct-txt');
-const education = document.querySelector('#education')
-const certificate = document.querySelector('#certificate')
+const education = document.querySelector('#education');
+const certificate = document.querySelector('#certificate');
 const ctCertificate = document.querySelector('.ct-certificate');
 const ctInfoWrapper = document.querySelectorAll('.ct-info-wrapper'); //controlla
-const studyOne = document.querySelector('.study01')
-const studyTwo = document.querySelector('.study02')
-const studyThree = document.querySelector('.study03')
+const studyOne = document.querySelector('.study01');
+const studyTwo = document.querySelector('.study02');
+const studyThree = document.querySelector('.study03');
 
 console.log("larghezza", window.innerWidth)
 console.log("altezza", window.innerHeight)
-//MENU
-menuSquare.addEventListener("mouseover",(e)=>{
-    menuText.style.opacity =1;
-    menuText.style.transition ="all 1s ease-in-out";
-});
 
-menuSquare.addEventListener("mouseout",(e)=>{
-    menuText.style.transition ="";
-    menuText.style.opacity =0;
-    menuText.style.transition ="all 0.3s ease-in-out";
-});
+//MENU
+let menuOpen = false;
+menuWrap.addEventListener("click", (e) => {  
+    
+    if(!menuOpen){
+        menu.addEventListener('wheel', function(e){ e.preventDefault(); }, { passive: false });
+        menu.classList.add('menu-active')
+        menuWrap.classList.add('open')
+        menuOpen = true;
+    }
+    else{
+        menuWrap.classList.remove('open')
+        menu.classList.remove('menu-active')
+        menuOpen= false;
+    }
+})
 //CONTACT BUTTON
 
 document.addEventListener("mouseover", (e) =>{
@@ -187,6 +193,7 @@ document.addEventListener("mouseout", (e) =>{
     if(scroll >650){
         studyThree.style.animation = "fade 1s cubic-bezier(0.645, 0.045, 0.355, 1) 0.4s"
         studyThree.style.animationFillMode = "forwards";
+        console.log("porcodiooooooooooooooooooooooooooo")
     }
     }
     
