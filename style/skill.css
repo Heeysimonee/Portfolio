@@ -1,0 +1,61 @@
+@import 'style.css';
+/* -------------------------------------------------------------- */
+/* SKILL*/
+/* -------------------------------------------------------------- */
+.skill{
+    height: 100vh;
+    width: 100vw;
+    background-image: var(--main-bg-image);
+    background-color: var(--main-second);
+}
+.sk-main{
+    height: 100%;
+    width: 100%;
+    animation-fill-mode: forwards;
+    padding: 10%;
+}
+.sk-main h1{
+    width: 100%;
+    color: var(--main-white);
+    background: var(--main-bg-image); 
+    background-color: var(--main-white);
+   -webkit-background-clip: text; 
+   -webkit-text-fill-color: transparent;
+   margin-bottom: 0% !important;
+}
+#sk-title span {
+    font-size: 5rem;
+}
+
+.sk-subtitle{
+    font-style: oblique;
+    font-size: var(--main-fs-subtitle-small);
+    color: var(--main-gray);
+    font-weight: 300;
+    padding-left: 5%;
+}
+.sk-txt-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.sk-info{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.sk-info-dt{
+    width: 100%;
+    height: 100%;
+    background: var(--main-bg-image);
+    background-color: white;
+}
+.sk-info-dt h4{
+    padding: 2% 5%;
+    font-style: oblique;
+    font-size: var(--main-fs-subtitle-small);
+    color: var(--main-gray);
+    font-weight: 300;
+    padding-left: 5%;
+    text-transform: uppercase;
+}

@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.cdnfonts.com/css/muli?styles=19919,19916,19914,19915,19917,19918,19920,19921,19910,19911,19912,19913,19908,19909');
-@import './education.css';
+@import './aboutMe.css';
 @import './landing.css';
+@import './skill.css';
 
 *{
     margin: 0;

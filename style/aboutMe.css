@@ -2,55 +2,58 @@
 /* -------------------------------------------------------------- */
 /* ABOUT ME */
 /* -------------------------------------------------------------- */
-.certification{
+.about{
     height: 100vh;
     width: 100vw;
     background-image: var(--main-bg-image);
     background-color: white;
 }
-.ct-main{
+.ab-main{
     height: 100%;
     animation-fill-mode: forwards;
     padding: 10%;
 }
-.ct-main h1{
+.ab-main h1{
     width: 100%;
     color: var(--main-second);
+    background: var(--main-bg-image); 
+    background-color: var(--main-second);
+   -webkit-background-clip: text; 
+   -webkit-text-fill-color: transparent;
     margin-bottom: 2rem;
 }
 #ct-title span {
-    color: var(--main-blue)
+    font-size: 5rem;
 }
-.ct-txt-container{
+.ab-txt-container{
     height: 100%;
     width: 100%;
-   
     display: flex;
 }
-.ct-paragraph{
+.ab-paragraph{
     flex: 1;
     padding: 5% 10% 5% 0;
    
 }
-.ct-txt-container h4{
+.ab-txt-container h4{
     font-style: oblique;
     font-size: var(--main-fs-subtitle);
     color: var(--main-gray);
     margin-bottom: 5%;
     font-weight: 300;
 }
-.ct-txt-container p{
+.ab-txt-container p{
     font-family: 'Muli', sans-serif;
     color: var(--main-gray);
     font-size: var(--main-fs-text);
     text-align: justify;
     margin-bottom: 3%;
 }
-.ct-txt-container p span{
+.ab-txt-container p span{
     font-family: 'Playfair Display', serif;
     font-style: oblique;
 }
-.ct-info{
+.ab-info{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);

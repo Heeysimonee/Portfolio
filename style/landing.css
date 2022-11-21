@@ -14,7 +14,7 @@
     font-weight: 300;
 }
 .menu{
-    position: absolute;
+    position: fixed;
     width: 100vw;
     height: 100vh;
     padding: 10%;
@@ -47,13 +47,9 @@
     background-color: var(--main-second);
 }
 .menu-social-container i{
+    cursor: pointer;
     font-size: 2.4rem;
     color: var(--main-second);  /* Fallback: assume this color ON TOP of image */
-    cursor: pointer;
-    /* background: var(--main-bg-image); 
-    background-color: var(--main-second);
-   -webkit-background-clip: text; 
-   -webkit-text-fill-color: transparent; */
    filter: drop-shadow(-1px -2px 1px rgba(4, 43, 102, 0.473)); 
    transition: all .35s ease-in-out;
 }
@@ -104,6 +100,7 @@
     z-index: 9999;
 }
 .menu-burger{
+    
     width: 30px;
     height: 2px;
     background: var(--main-white);
@@ -128,15 +125,18 @@
 .menu-wrap.open .menu-burger{
     transform: translateX(-50px);
     background: transparent;
+    position: fixed;
 }
 .menu-wrap.open .menu-burger::before{
     transform: rotate(45deg) translate(35px, -35px);
     background: var(--main-gray);
+    position: fixed;
     
 }
 .menu-wrap.open .menu-burger::after{
     transform: rotate(-45deg) translate(35px, 35px);
     background: var(--main-gray);
+    position: fixed;
 }
 /*LATERAL SECTION INDICATOR*/
 .section-indicator{
@@ -167,7 +167,7 @@
 
 /*LANDING SECTION*/
 .hero{
-    height: 90vh; background-color: red;
+    height: 90vh;
     width: 100vw;
     background-image: var(--main-bg-image);
     background-color: var(--main-blue);
