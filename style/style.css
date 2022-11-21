@@ -38,6 +38,7 @@ body{
     scrollbar-width: none;  /* Firefox */
     background: var(--main-white);
     
+    
 }
 body::-webkit-scrollbar { 
     display: none;  /* Safari and Chrome */

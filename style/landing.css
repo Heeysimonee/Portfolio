@@ -14,7 +14,6 @@
     font-weight: 300;
 }
 .menu{
-    opacity: 1;
     position: absolute;
     width: 100vw;
     height: 100vh;
@@ -23,7 +22,6 @@
     transition: all .5s ease-in-out;
 }
 .menu.menu-active{
-    opacity: 1;
     top: 0;
     left: 0;
     display: flex;
@@ -169,7 +167,7 @@
 
 /*LANDING SECTION*/
 .hero{
-    height: 90vh;
+    height: 90vh; background-color: red;
     width: 100vw;
     background-image: var(--main-bg-image);
     background-color: var(--main-blue);
@@ -262,7 +260,6 @@ h1.title{
     cursor: pointer;
 }
 .change-txt{
-   
     position: relative;
     display: flex;
     font-weight: 800;
@@ -302,10 +299,11 @@ h1.title{
 .cnt-above-txt{
     opacity: 0;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 500;
     font-size: var(--main-fs-text-small);
     letter-spacing: 5px;
     color: var(--main-second);
+    font-style: oblique;
 }
 .paper-plane:hover + .contact-txt {
     background-position: left;
@@ -320,10 +318,11 @@ h1.title{
     width: 50%;
     opacity: 0;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 500;
     font-size: var(--main-fs-text-small);
     letter-spacing: 5px;
     color: var(--main-white);
+    font-style: oblique;
 }
 .cnt-under-active{
     animation: cnt-under-txt 2s cubic-bezier(0.645, 0.045, 0.355, 1);

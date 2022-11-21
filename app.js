@@ -20,17 +20,7 @@ const bounce = document.querySelectorAll('.bounce');
 const heroLineEnd = document.querySelector('.line-end');
 //CERTIFICATION SECTION
 const certificationBg = document.querySelector('.certification');
-const ctLineWrapper = document.querySelector('.ct-line-wrapper');
 const ctTitle = document.querySelector('#ct-title');
-const ctLine = document.querySelector('.ct-line');
-const ctText = document.querySelector('.ct-txt');
-const education = document.querySelector('#education');
-const certificate = document.querySelector('#certificate');
-const ctCertificate = document.querySelector('.ct-certificate');
-const ctInfoWrapper = document.querySelectorAll('.ct-info-wrapper'); //controlla
-const studyOne = document.querySelector('.study01');
-const studyTwo = document.querySelector('.study02');
-const studyThree = document.querySelector('.study03');
 
 console.log("larghezza", window.innerWidth)
 console.log("altezza", window.innerHeight)
@@ -120,48 +110,11 @@ document.addEventListener("mouseout", (e) =>{
     }
    });
 
-   //ABOUT ME SMALL MENU
-    document.addEventListener('click', (e)=>{
-    if(e.target == certificate){
-        ctCertificate.style.opacity = '0';
-        ctCertificate.style.width = "0";
-        ctText.style.width = "0"
-        ctText.style.opacity = "0"
-        ctText.style.overflow = "hidden";
-        ctText.style.transition = "all .1s linear"
-        ctLineWrapper.classList.remove("change-menu-animation");
-        void cntUnderText.offsetWidth;
-        ctLineWrapper.classList.add("change-menu-animation");        
-        ctCertificate.style.opacity ='1';
-        ctCertificate.style.width ='100%';
-        ctCertificate.style.transition = "all 0.2s linear 1.5s"
-        certificate.classList.add('ct-menu-active');
-        education.classList.remove('ct-menu-active');
-    }
-    if(e.target == education){
-        ctText.style.width = "0"
-        ctText.style.opacity = "0"
-        ctCertificate.style.opacity = '0';
-        ctCertificate.style.width = "0";
-        ctCertificate.style.overflow = "hidden";
-        ctCertificate.style.transition = "all .1s linear"
-        ctLineWrapper.classList.remove("change-menu-animation");
-        void cntUnderText.offsetWidth;
-        ctLineWrapper.classList.add("change-menu-animation");
-        ctText.style.opacity ="1"
-        ctText.style.width = "100%"
-        ctText.style.transition = "width 0.2s ease-in-out 1.5s"
-        education.classList.add('ct-menu-active');
-        certificate.classList.remove('ct-menu-active');
-    }
-   })
-  
 
    //SCROLL EVENTS
     s1.classList.add("square-active")
     window.onscroll = function (event) {
     let scroll = window.pageYOffset;
-    //console.log(scroll)
     if (scroll < 350) {
         squareIndicator.forEach(square =>{
         square.style.border = '1px solid var(--main-white)';
@@ -170,8 +123,7 @@ document.addEventListener("mouseout", (e) =>{
     s1.classList.add("square-active")
     }
     if(scroll>190){
-        ctLine.style.animation ="line-certification 3s cubic-bezier(0.645, 0.045, 0.355, 1)"
-        ctLine.style.animationFillMode = "forwards";
+
         ctTitle.style.animation ="fade 1s cubic-bezier(0.645, 0.045, 0.355, 1)";
     }
     if(scroll > 330 && scroll< 1800) {
@@ -182,25 +134,8 @@ document.addEventListener("mouseout", (e) =>{
             });
     s2.classList.add("square-active");    
     }
-    if(scroll >450){
-        studyOne.style.animation = "fade 1s cubic-bezier(0.645, 0.045, 0.355, 1)"
-        studyOne.style.animationFillMode = "forwards";
-    }
-    if(scroll >550){
-        studyTwo.style.animation = "fade 1s cubic-bezier(0.645, 0.045, 0.355, 1)0.2s"
-        studyTwo.style.animationFillMode = "forwards";
-    }
-    if(scroll >650){
-        studyThree.style.animation = "fade 1s cubic-bezier(0.645, 0.045, 0.355, 1) 0.4s"
-        studyThree.style.animationFillMode = "forwards";
-        console.log("porcodiooooooooooooooooooooooooooo")
-    }
     }
     
-
-
-
-
   // All values are measured in pixels
 window.addEventListener('scroll', () => {
  
