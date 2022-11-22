@@ -17,6 +17,7 @@
 }
 .sk-main h1{
     width: 100%;
+
     color: var(--main-white);
     background: var(--main-bg-image); 
     background-color: var(--main-white);
@@ -59,6 +60,37 @@
     flex: 1;
     padding: 10% 10% 5% 10%;
 }
+.sk-paragraph h4{
+    margin-bottom: 5%;
+}
+.sk-paragraph p{
+    margin-bottom: 5%;
+}
+.sk-btn{
+    margin-top: 5%;
+    width: 70%;
+    height: 5vh;
+    border: 1px solid var(--main-white);
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to left, #0000 50%, var(--main-white) 50%) right;
+    background-size: 200%;
+    transition: .6s;
+    cursor: pointer;
+}
+.sk-btn a{
+    text-decoration: none;
+    color: var(--main-gray);
+    line-height: 0;
+    font-family: 'Playfair Display', serif;
+    font-style: oblique;
+    font-size: var(--main-fs-subtitle-small);
+}
+.sk-btn:hover{
+    background-position: left;
+}
 .sk-info{
     height: 100%;
     height: 100%;
@@ -73,12 +105,11 @@
 }
 .sk-info-container h4{
     font-family: 'Playfair Display', serif;
-    width: 20%;
 }
 .sk-info-container p{
-    padding-left: 5%;
+    /* padding-left: 5%; */
     text-align: start;
-    font-size: var(--main-fs-text)
+    font-size: var(--main-fs-text-small);
 }
 .sk-info-fe{
     width: 100%;
@@ -118,6 +149,7 @@
     justify-content: center;
     border-radius: 5%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
 }
 .sk-badge i{
     font-size: 4rem;
