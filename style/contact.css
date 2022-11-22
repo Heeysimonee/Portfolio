@@ -96,6 +96,7 @@
 .rowD-content input:focus{
     border-bottom: 1px solid var(--main-blue);
     outline: none;
+    background: transparent;
 }
 .cnt-form-rowT{
     height: 100%;
