@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/landing.css">
     <link rel="stylesheet" href="./style/education.css">
+    <link rel="stylesheet" href="./style/skill.css">
+    <link rel="stylesheet" href="./style/contact.css">
     <link rel="icon" type="image/x-icon" href="./img/dot.svg">
     <script src="https://kit.fontawesome.com/182bbfc28f.js" crossorigin="anonymous"></script>
 
@@ -46,7 +48,6 @@
         <div class="square s2"></div>
         <div class="square s3"></div>
         <div class="square s4"></div>
-        <div class="square s5"></div>
     </section>
     <!--LANDING-->
     <section class="hero">
@@ -233,7 +234,44 @@
             </div>
     </section>
 
+    <!-- CONTACT SECTION -->
 
+    <section class="contact-section">
+        <h1 id="cnt-title" class="title">Contact me<span>.</span></h1>
+        <div class="cnt-form-wrapper">
+            <div class="cnt-form-heading">
+                <h4>How can I help you?</h4>
+                <p>Get in touch or write me an email directly on <span>SimoneCattaneo05@gmail.com</span></p>
+            </div>
+            <div class="cnt-form-main">
+                <form action="https://formspree.io/f/xrgddwjw" method="POST">
+                    <div class="cnt-form-rowD">
+                        <div class="rowD-content">
+                            <label for="text">Full Name</label>
+                            <input type="text" name="text" placeholder="Enter your full name">
+                        </div>
+                        <div class="rowD-content">
+                            <label for="email">Email Adress</label>
+                            <input type="email" name="email" placeholder="Enter your email address">
+                        </div>
+                    </div>
+
+                    <div class="cnt-form-rowT">
+                        <div class="rowT-content">
+                            <label for="message">Your Message</label>
+                            <textarea name="message"></textarea>
+                        </div>
+
+                    </div>
+
+                    <!-- your other form fields go here -->
+                    <div class="cnt-form-btn">
+                        <button type="submit">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
     <script src="./app.js"></script>
 </body>
 

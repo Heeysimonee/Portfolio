@@ -4,6 +4,7 @@
 @import './aboutMe.css';
 @import './landing.css';
 @import './skill.css';
+@import './contact.css';
 
 *{
     margin: 0;

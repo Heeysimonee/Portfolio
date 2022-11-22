@@ -119,8 +119,10 @@ document.addEventListener("mouseout", (e) =>{
         squareIndicator.forEach(square =>{
         square.style.border = '1px solid var(--main-white)';
         square.classList.remove("square-active");
+        square.style.background ="transparent"
         });
     s1.classList.add("square-active")
+    s1.style.background = "var(--main-white)"
     }
     if(scroll>190){
         ctTitle.style.animation ="fade 1s cubic-bezier(0.645, 0.045, 0.355, 1)";
@@ -129,15 +131,28 @@ document.addEventListener("mouseout", (e) =>{
         squareIndicator.forEach(square =>{
             square.style.border = '1px solid var(--main-second)';
             square.classList.remove("square-active")
+            square.style.background ="transparent"
             });
-    s2.classList.add("square-active");    
+    s2.classList.add("square-active");
+    s2.style.background = "var(--main-second)"    
     }
     if(scroll > 1370 && scroll < 2370){
         squareIndicator.forEach(square =>{
             square.style.border = '1px solid var(--main-white)';
             square.classList.remove("square-active")
+            square.style.background ="transparent"
             });
     s3.classList.add("square-active");  
+    s3.style.background = "var(--main-white)"
+    }
+    if(scroll > 2370){
+        squareIndicator.forEach(square =>{
+            square.style.border = '1px solid var(--main-blue)';
+            square.classList.remove("square-active")
+            square.style.background ="transparent"
+            });
+        s4.classList.add("square-active");  
+        s4.style.background = "var(--main-blue)"
     }
     
     }
