@@ -123,17 +123,23 @@ document.addEventListener("mouseout", (e) =>{
     s1.classList.add("square-active")
     }
     if(scroll>190){
-
         ctTitle.style.animation ="fade 1s cubic-bezier(0.645, 0.045, 0.355, 1)";
     }
-    if(scroll > 330 && scroll< 1800) {
-        
+    if(scroll > 330 && scroll< 1330) {
         squareIndicator.forEach(square =>{
             square.style.border = '1px solid var(--main-second)';
             square.classList.remove("square-active")
             });
     s2.classList.add("square-active");    
     }
+    if(scroll > 1370 && scroll < 2370){
+        squareIndicator.forEach(square =>{
+            square.style.border = '1px solid var(--main-white)';
+            square.classList.remove("square-active")
+            });
+    s3.classList.add("square-active");  
+    }
+    
     }
     
   // All values are measured in pixels
