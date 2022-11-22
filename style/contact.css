@@ -91,7 +91,6 @@
     transition: all .5s ease-in-out;
     font-family: 'Muli', sans-serif;
     font-size: var(--main-fs-text);
-    font-size: 100;
     color: var(--main-gray);
 }
 .rowD-content input:focus{
@@ -99,7 +98,6 @@
     outline: none;
 }
 .cnt-form-rowT{
-    background-color: red;
     height: 100%;
     flex: 2;
     display: flex;
@@ -118,6 +116,7 @@
     font-size: var(--main-fs-text-small);
 }
 .rowT-content textarea{
+    font-family: 'Muli', sans-serif;
     margin: 2% 0;
     width: 100%;
     height: 90%;
@@ -125,13 +124,52 @@
     border-bottom: 1px solid var(--main-gray);
     resize: none;
     overflow-y: auto;
-    
+    font-size: var(--main-fs-text);
+    color: var(--main-gray);
+    padding: 2%;
+    background: transparent;
 }
+.rowT-content textarea:focus{
+    border-bottom: 1px solid var(--main-blue);
+    outline: none;
+}
+.rowT-content textarea::-webkit-scrollbar {
+    width: 3px;
+  }
+  .rowT-content textarea::-webkit-scrollbar-track {
+    background: var(--main-gray);
+  }
+  .rowT-content textarea::-webkit-scrollbar-thumb {
+    background:  #797979;
+  }
+  .rowT-content textarea::-webkit-scrollbar-thumb:hover {
+    background:  #5a5a5a;
+    cursor: pointer;
+  }
 .cnt-form-btn{
-    /* background-color: blue; */
     flex: 1;
     height: 100%;
+    width: 100%;
     display: flex;
+    align-items: center;
     justify-content: center;
-    align-content: center;
+}
+
+.cnt-form-btn button{
+    color: var(--main-gray);
+    font-family: 'Playfair Display', serif;
+    font-size: var(--main-fs-subtitle-small);
+    line-height: 0;
+    height: 45%;
+    width: 30%;
+    border: 1px solid var(--main-blue);
+    background: linear-gradient(to left, #0000 50%, var(--main-blue) 50%) right;
+    background-size: 200%;
+    transition: .6s;
+    cursor: pointer;
+}
+.cnt-form-btn button:hover{
+    background-position: left;
+    color: var(--main-white);
+    
 }
