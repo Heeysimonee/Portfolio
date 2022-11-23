@@ -6,6 +6,7 @@
 @import './skill.css';
 @import './contact.css';
 @import './work.css';
+@import'./resume.css';
 
 *{
     margin: 0;
