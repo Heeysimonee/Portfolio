@@ -1,0 +1,56 @@
+@import './style.css';
+
+.header-wk{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    background-color: #2B2B2B;
+    /* background-image: var(--main-bg-image); */
+}
+.main-wk{
+    height: 90vh;
+    width: 100vw;
+    /* background-image: var(--main-bg-image); */
+    background-color: #2B2B2B;
+    padding: 10% 20%;
+}
+
+/* MAIN SECTION*/
+.main-wk{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.main-wk h1{
+    font-family: 'Muli', sans-serif;
+    font-weight: 200;
+    font-size: var(--main-fs-subtitle);
+    color: var(--main-white);
+    cursor: pointer;
+    position: relative;
+}
+
+.fa-heart-crack{
+    opacity: 0;
+    position: absolute;
+    bottom: 10px;
+    right: 2px;
+    transition: all .8s ease-in-out;
+    font-size: 3px;
+}
+.wk-dot{
+    transition: all .8s ease-in-out;
+}
+.main-wk h1:hover .fa-heart-crack{
+    font-size: var(--main-fs-subtitle-small);
+    opacity: 1;
+    right: -4%;
+    color: var(--main-second);
+    opacity: 1;
+}
+.main-wk h1:hover .wk-dot{
+    opacity: 0;
+}

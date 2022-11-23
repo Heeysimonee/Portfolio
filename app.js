@@ -1,5 +1,6 @@
 const menu = document.querySelector(".menu");
 const menuWrap = document.querySelector(".menu-wrap");
+const burger = document.querySelector(".menu-burger");
 const squareIndicator = document.querySelectorAll('.square');
 const s1 = document.querySelector(".s1");
 const s2 = document.querySelector(".s2");
@@ -24,8 +25,11 @@ const ctTitle = document.querySelector('#ct-title');
 
 console.log("larghezza", window.innerWidth)
 console.log("altezza", window.innerHeight)
+console.log(window.location.pathname)
+console.log(window.location.pathname == "/work.html")
 
 //MENU
+
 let menuOpen = false;
 menuWrap.addEventListener("click", (e) => {  
     
@@ -69,7 +73,7 @@ document.addEventListener("mouseout", (e) =>{
     contactWrapper.style.backgroundPosition= "right";
     contactText.textContent ="Get in touch"
     contactText.style.fontSize="var(--main-fs-button-big)"
-    contactText.style.fontWeight="800";
+    contactText.style.fontWeight="700";
     contactText.style.color="var(--main-second)";
     contactText.style.letterSpacing="2px";
     contact.style.border ="1px solid var(--main-white)";

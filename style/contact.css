@@ -171,6 +171,5 @@
 }
 .cnt-form-btn button:hover{
     background-position: left;
-    color: var(--main-white);
-    
+    color: var(--main-white);    
 }

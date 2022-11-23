@@ -50,8 +50,8 @@
     cursor: pointer;
     font-size: 2.4rem;
     color: var(--main-second);  /* Fallback: assume this color ON TOP of image */
-   filter: drop-shadow(-1px -2px 1px rgba(4, 43, 102, 0.473)); 
-   transition: all .35s ease-in-out;
+    filter: drop-shadow(-1px -2px 1px rgba(4, 43, 102, 0.473)); 
+    transition: all .35s ease-in-out;
 }
 .menu-social-container i:hover{
     transform: scale(1.3);
@@ -69,24 +69,26 @@
     gap: 5%;
 }
 .menu-voice a{
-    font-size: 5rem;
-    font-weight: 800;
+    font-family: 'Playfair Display', serif;
+    font-size: var(--main-fs-title);
+    font-weight: 700;
     letter-spacing: 5px;
     text-decoration: none;
     color: var(--main-second); 
     cursor: pointer;
     filter: drop-shadow(-5px -2px 0px rgba(4, 43, 102, 0.473));
-    width: 20%;
+    width: 25%;
     transition:  all .5s ease-in-out;
+    line-height: var(--main-fs-title);
 }
 .menu-voice a:hover{
     animation: bounce 1s ease-in-out;
 }
 .menu-voice p{
+    font-family: 'Muli', sans-serif;
     text-align: left;
     color: var(--main-gray);
-    font-size: var(--main-fs-text);
-    margin-bottom: 10px;
+    font-size: var(--main-fs-text)
 }
 .menu-wrap{
     position: relative;
@@ -100,7 +102,6 @@
     z-index: 9999;
 }
 .menu-burger{
-    
     width: 30px;
     height: 2px;
     background: var(--main-white);
@@ -263,8 +264,9 @@ h1.title{
 }
 .change-txt{
     position: relative;
+    font-family: 'Playfair Display', serif;
     display: flex;
-    font-weight: 800;
+    font-weight: 700;
     font-size: var(--main-fs-button-big);
     color: var(--main-second);
     transition: background-position .6s ease-in-out;
