@@ -113,7 +113,7 @@
 
 @media screen and (max-width: 320px) {
     .about{
-        min-height: 220vh;
+        min-height: 240vh;
     }
     .ab-main{
         padding: 0% 5%;
@@ -159,7 +159,8 @@
     .ab-txt-container{
         display: flex;
         flex-direction: column;
-        height: 50%;
+        gap: 5%;
+        height: 100%;
     }
     .ab-paragraph{
         padding: 5% 0 0;
@@ -172,5 +173,5 @@
         flex: auto;
         height: 100%;
     }
-
+    
 }
