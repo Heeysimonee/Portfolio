@@ -227,9 +227,8 @@
 .cv-main-education{
     display: flex;
     flex-direction: column;
-    padding: 5% 0 ;
+    padding: 5% 0;
     flex: 1;
-    /* background-color: blueviolet; */
 }
 .cv-main-education p{
     font-family: 'Muli', sans-serif;
@@ -265,12 +264,32 @@
 @media screen and (max-width:320px){
     .main-re{
         height: max-content;
+        padding-bottom: 10%;
     }
     .cv-container{
         flex-wrap: wrap;
     }
     .cv-side{
         border: none;
+    }
+
+}
+
+@media screen and (min-width:320px) and (max-width:480px){
+    .main-re{
+        height: max-content;
+    }
+    .cv-container{
+        flex-wrap: wrap;
+    }
+    .cv-side{
+        border: none;
+        padding-bottom: 10%;
+    }
+    .cv-main{
+        overflow-x: hidden;
+        width: 100%;
+        padding: 5% 0 0 0;
     }
 
 }

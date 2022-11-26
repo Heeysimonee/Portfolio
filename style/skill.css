@@ -193,3 +193,41 @@
         row-gap: 10px;
     }
 }
+
+@media screen and (min-width:321px) and (max-width: 480px){
+    .skill{
+        min-height: 160vh;
+    }
+    .sk-main{
+        flex-direction: column;
+    }
+    
+    .sk-subtitle{
+        padding-bottom: 5%;
+    }
+    .sk-btn{
+        margin-top: 15%;
+        width: 100%;
+    }
+    .sk-info{
+        justify-content: space-around;
+        gap: 0;
+        flex: auto;
+        padding-bottom: 10%;
+    }
+    .sk-info-container{
+        width: 100%;
+    }
+    .sk-info-fe, .sk-info-be, .sk-info-de{
+        flex-direction: column;
+        gap: 0;
+        padding: 0;
+    }
+    .sk-info-container h4, .sk-info-container p {
+        padding-left: 10%;
+    }
+    .sk-badge-container{
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
+}
