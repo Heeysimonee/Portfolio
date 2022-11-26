@@ -160,7 +160,7 @@
 
 @media screen and (max-width:320px) {
     .skill{
-        height: 150vh;
+        min-height: 200vh;
     }
     .sk-main{
         flex-direction: column;

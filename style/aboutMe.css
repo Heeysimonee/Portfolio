@@ -113,7 +113,7 @@
 
 @media screen and (max-width: 320px) {
     .about{
-        height: 180vh;
+        min-height: 220vh;
     }
     .ab-main{
         padding: 0% 5%;
