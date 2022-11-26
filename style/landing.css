@@ -182,7 +182,7 @@
     display: flex;
 }
 .main-hello{
-    width: max-content;
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -197,7 +197,7 @@
     filter: drop-shadow(-5px -2px 0px rgba(4, 43, 102, 0.473));   
 }
 h1.title{
-    width: max-content;
+    width: 100%;
     margin-bottom: 5%;
 }
 .subtitle-p{
@@ -350,13 +350,20 @@ h1.title{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: space-around;
+    align-items: flex-start;
     gap: 5px;
     height: 100%;
-    width: 2vw;
+    width: 100%;
     padding-top: 8.5%;
 }
-.line-container span{
+.line-wrap{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 10%;
+    align-items: center;
+}
+.line-wrap span{
     display: flex;
     justify-content: center;
     color: var(--main-second);
@@ -366,7 +373,6 @@ h1.title{
     font-size: var(--main-fs-title);
 }
 .line{
-    margin: 0 auto;
     width: 1px;
     background: var(--main-white);
     animation: line 1.2s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -384,10 +390,8 @@ h1.title{
     animation: fade 1s cubic-bezier(0.645, 0.045, 0.355, 1);
     animation-fill-mode: forwards;
     animation-delay: 0.32s;
-    margin: 0 auto;
 }
 .line-end{
-    margin: 0 auto;
     width: 1px;
     height: 100%;
     background: var(--main-white);
@@ -398,8 +402,26 @@ h1.title{
 /*   Mobile   */
 
 @media screen and (max-width: 320px) {
+    .menu{
+        padding: 25% 10%;
+    }   
+    .menu-social-line{
+        width: 25%;
+    }
+    .menu-voice{
+        flex-direction: column;
+        align-items: flex-start;
+    }
     .main{
-        padding: 4% 8% 10% 8%;
+        padding: 10%;
+    }
+    .main-hello h1{
+        padding-bottom: 5%;
+    }
+    
+    .main-hello .p-fade{
+        width: 100%;
+        padding: 10% 0;
     }
     .section-indicator{
     flex-direction: row;
@@ -409,22 +431,9 @@ h1.title{
     bottom: 0;
     z-index:99;
     }
-    
-    .title{
-        font-size: 6rem;
-        letter-spacing: 0;
-    }
-    .p-fade{
-        padding:2% 0 0 0;
-        font-size: 1.4rem;
-    }
     .ctn-button-wrapper{
     height: 20%;
     width: 100%;
-    }
-    .contact-above{
-        height: 5%;
-        width: 100%;
     }
     .line-container{
         display: none;
@@ -432,92 +441,9 @@ h1.title{
 }
 
 @media screen and (min-width:321px) and (max-width: 480px){
-    .main{
-        padding: 6vh 8%;
-        align-items: center;
-    }
-    .section-indicator{
-    flex-direction: row;
-    height: 5vh;
-    width: 100vw;
-    bottom: 0;
-    z-index:99;
-    }
-    .title{
-        letter-spacing: 2px;
-    }
-    .main-hello{
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    .greeting-p{
-        margin-top: 2rem;
-    }
-    .ctn-button-wrapper{
-        height: 20%;
-        width: 100%;
-        }
-    .contact-above{
-        height: 5%;
-        width: 100%;
-    }
-    .contact-under{
-        height: 5%;
-        width: 100%;
-    }
-    .cnt-under-txt{
-        width: 65%;
-    }
-    .line-container{
-        display: none;
-    }
+    
 }
 @media screen and (min-width:481px) and (max-width: 1023px){
-    .main{
-        padding: 6vh 8%;
-        align-items: center;
-    }
-    .section-indicator{
-    flex-direction: column;
-    height: 100vh;
-    width: 8vw;
-    right: 0;
-    z-index:99;
-    gap: 2.5%;
-    }
-    .title{
-        letter-spacing: 5px;
-    }
-    .main-hello{
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        padding-bottom: 6vh;
-    }
-   
-    .ctn-button-wrapper{
-        height: 20%;
-        width: 80%;
-        margin-left: 10% ;
-        }
-    .contact-above{
-        height: 5%;
-        width: 100%;
-    }
-    .contact-under{
-        height: 5%;
-        width: 100%;
-    }
-    .cnt-under-txt{
-        width: 65%;
-    }
-    .line-container{
-        display: none;
-    } 
+    
 }
 

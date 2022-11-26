@@ -152,7 +152,24 @@ body::-webkit-scrollbar {
         
     }
 }
-
+@media screen and (max-width:320px) {
+    :root{
+        
+        /*FONT SIZE*/
+        --main-fs-title: clamp(5rem, 16vw, 6rem);
+        --main-fs-subtitle: clamp(2rem, 10vw, 5rem);
+        --main-fs-subtitle-small: clamp(1.5rem, 3vw, 8rem);
+        --main-fs-text: clamp(1.6rem, 0.85vw, 4rem);
+        --main-fs-text-small: clamp(0.9rem, 0.7vw, 1.7rem);
+        --main-fs-button-big: clamp(3rem, 1.8vw, 10rem);
+        --main-fs-button-small: clamp(1.55rem, 1vw, 8rem);
+        /*LINE SPACING*/
+        --main-lh-title: clamp(5rem, 17vw, 7rem);
+        --main-lh-subtitle: clamp(2rem, 6vw, 4rem);
+        --main-lh-subtitle-small: clamp(1rem, 9vw, 5rem);
+    }
+    
+}
 @media screen and (min-width:481px) and (max-width: 768px){
     :root{
         /*FONT SIZE*/

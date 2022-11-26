@@ -261,3 +261,16 @@
     height: 100%;
     background-color: red;
 }
+
+@media screen and (max-width:320px){
+    .main-re{
+        height: max-content;
+    }
+    .cv-container{
+        flex-wrap: wrap;
+    }
+    .cv-side{
+        border: none;
+    }
+
+}

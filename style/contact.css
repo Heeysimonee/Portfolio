@@ -1,6 +1,6 @@
 @import 'contact.css';
 /* -------------------------------------------------------------- */
-/* SKILL*/
+/* CONTACT*/
 /* -------------------------------------------------------------- */
 .contact-section{
     height: 100vh;
@@ -15,6 +15,7 @@
     background: var(--main-bg-image); 
     background-color: var(--main-blue);
    -webkit-background-clip: text; 
+   background-clip: text;
    -webkit-text-fill-color: transparent;
    margin-bottom: 0% !important;
 }
@@ -22,14 +23,12 @@
     font-size: 5rem;
 }
 .cnt-form-wrapper{
-    /* background-color: red; */
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
 }
 .cnt-form-heading{
-    /* background-color: blue; */
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -59,7 +58,6 @@
     padding: 0% 20%;
 }
 .cnt-form-main form {
-    /* background-color: pink; */
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -172,4 +170,67 @@
 .cnt-form-btn button:hover{
     background-position: left;
     color: var(--main-white);    
+}
+
+@media screen and (max-width: 320px) {
+    .contact-section{
+        overflow-y: hidden;
+    }
+    .cnt-form-main{
+        flex: 2;
+        padding: 0%;
+    }
+    .cnt-form-main form{
+        height: 80%;
+    }
+    .cnt-form-heading{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .cnt-form-heading p {
+        text-align: left;
+    }
+    .cnt-form-rowD{
+        flex-direction: column;
+        flex: 1;
+    }
+    .rowD-content{
+        width: 100%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 5%;
+    }
+    .cnt-form-rowT{
+        flex: 1;
+    }
+    .rowT-content textarea{
+        height: 50%;
+    }
+    .cnt-form-btn{
+        flex: 0.5;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    
+    .cnt-form-btn button{
+        color: var(--main-gray);
+        font-family: 'Playfair Display', serif;
+        font-size: var(--main-fs-subtitle-small);
+        line-height: 0;
+        height: 45%;
+        width: 100%;
+        border: 1px solid var(--main-blue);
+        background: linear-gradient(to left, #0000 50%, var(--main-blue) 50%) right;
+        background-size: 200%;
+        transition: .6s;
+        cursor: pointer;
+    }
 }
