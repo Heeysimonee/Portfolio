@@ -482,7 +482,8 @@ h1.title{
     }
     
 }
-@media screen and (min-width:481px) and (max-width: 768px){
+/*mobile and tablet*/
+@media screen and (min-width:481px) and (max-width: 1024px){
     .menu{
         padding: 10% 10%;
     }   
@@ -492,6 +493,10 @@ h1.title{
     .menu-voice{
         flex-direction: column;
         align-items: flex-start;
+    }
+    .square{
+        width: 20px;
+        height: 20px;
     }
     .main{
         padding: 10%;
@@ -509,6 +514,8 @@ h1.title{
     }
     
 }
+/*Tablet*/
+
 @media screen and (min-width:769px) and (max-width: 1024px) and (orientation: landscape){
     .menu{
         padding: 10% 10%;
@@ -546,6 +553,26 @@ h1.title{
        padding-top: 10%;
     }
     
+}
+@media screen and (min-width:769px) and (max-width: 1024px) {
+    .logo{
+        font-size: var(--main-fs-subtitle);
+    }
+    .menu-burger{
+        width: 40px;
+        height: 3px;
+    }
+    .menu-burger::before,
+    .menu-burger::after{
+        width: 40px;
+        height: 3px;
+    }
+    .menu-burger::before{
+        transform: translateY(-12px);
+    }
+    .menu-burger::after{
+        transform: translateY(12px);
+    }
 }
 
 

@@ -293,7 +293,9 @@
     }
 
 }
-@media screen and (min-width:481px) and (max-width: 768px){
+
+/*tablet*/
+@media screen and (min-width:481px) and (max-width: 1024px){
     .main-re{
         height: max-content;
     }
@@ -312,4 +314,25 @@
         padding: 5% 0 0 0;
     }
 
+}
+
+@media screen and (min-width:769px) and (max-width: 1024px) {
+    .logo-re{
+        font-size: var(--main-fs-subtitle);
+    }
+    .menu-burger-re{
+        width: 40px;
+        height: 3px;
+    }
+    .menu-burger-re::before,
+    .menu-burger-re::after{
+        width: 40px;
+        height: 3px;
+    }
+    .menu-burger-re::before{
+        transform: translateY(-12px);
+    }
+    .menu-burger-re::after{
+        transform: translateY(12px);
+    }
 }

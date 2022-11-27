@@ -288,7 +288,8 @@
         width: 100%;
     }
 }
-@media screen and (min-width:481px) and (max-width: 768px){
+/*mobile and tablet*/
+@media screen and (min-width:481px) and (max-width: 1024px){
     .contact-section{
         min-height: 100vh;
         overflow-y: hidden;
