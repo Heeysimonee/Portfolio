@@ -25,8 +25,6 @@ const ctTitle = document.querySelector('#ct-title');
 
 console.log("larghezza", window.innerWidth)
 console.log("altezza", window.innerHeight)
-console.log(window.location.pathname)
-console.log(window.location.pathname == "/work.html")
 
 //MENU
 
