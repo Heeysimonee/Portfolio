@@ -347,8 +347,21 @@
     }
 }
 @media screen and (min-width:769px) and (max-width: 1024px) and (orientation: landscape){
-   
+   .cnt-form-heading p{
+    width: 100%;
+   }
     .cnt-form-main{
         padding: 0%;
+    }
+    .rowD-content{
+       margin-bottom: 3%;
+    }
+    .cnt-form-btn{
+        height: 100%;
+    }
+    .cnt-form-btn button {
+        width: 60%;
+        height: 100%;
+        
     }
 }

@@ -531,8 +531,8 @@ h1.title{
         transform: translateY(12px);
     }
     .square{
-        width: 20px;
-        height: 20px;
+        width: 18px;
+        height: 18px;
     }
 }
 @media screen and (min-width:769px) and (max-width: 1024px) and (orientation: landscape){
