@@ -323,7 +323,17 @@
     }
 }
 @media screen and (min-width:769px) and (max-width: 1024px) and (orientation: landscape){
+    .skill{
+        min-height: 100vh;
+    }
     .sk-btn{
         width: 100%;
+    }
+    .sk-main{
+        flex-direction: row;
+    }
+    .sk-badge{
+        height: 80px;
+        width: 80px;
     }
 }
