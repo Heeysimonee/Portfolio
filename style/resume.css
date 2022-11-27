@@ -293,3 +293,23 @@
     }
 
 }
+@media screen and (min-width:481px) and (max-width: 768px){
+    .main-re{
+        height: max-content;
+    }
+    .cv-container{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .cv-side{
+        border: none;
+        padding-bottom: 10%;
+        width: 100%;
+    }
+    .cv-main{
+        overflow-x: hidden;
+        width: 100%;
+        padding: 5% 0 0 0;
+    }
+
+}

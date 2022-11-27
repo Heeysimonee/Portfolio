@@ -482,7 +482,31 @@ h1.title{
     }
     
 }
-@media screen and (min-width:481px) and (max-width: 1023px){
+@media screen and (min-width:481px) and (max-width: 768px){
+    .menu{
+        padding: 10% 10%;
+    }   
+    .menu-social-line{
+        width: 25%;
+    }
+    .menu-voice{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .main{
+        padding: 10%;
+    } 
+    .main-hello .p-fade{
+        width: 100%;
+        padding: 0%;
+    }
+    .ctn-button-wrapper{
+    height: 80%;
+    width: 100%;
+    }
+    .line-container{
+        display: none;
+    }
     
 }
 
