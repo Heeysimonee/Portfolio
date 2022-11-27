@@ -192,7 +192,7 @@ body::-webkit-scrollbar {
     :root{
         /*FONT SIZE*/
         --main-fs-text: clamp(1rem, 3vw, 4rem);
-        --main-fs-text-small: clamp(0.9rem, 2.5vw, 1.7rem);
+        --main-fs-text-small: clamp(0.9rem, 2vw, 1.7rem);
         --main-fs-title: clamp(8rem, 16vw, 12rem);
         --main-fs-subtitle: clamp(2rem, 6vw, 18rem);
         --main-fs-subtitle-small: clamp(2rem, 3vw, 17rem);
@@ -204,19 +204,19 @@ body::-webkit-scrollbar {
         --main-lh-subtitle-small: clamp(2.5rem, 4.5vw, 5rem);
     }
 }
-@media screen and (min-width:769px) and (max-width: 1023px){
+@media screen and (min-width:769px) and (max-width: 1024px) and (orientation: landscape){
     :root{
         /*FONT SIZE*/
-        --main-fs-text: clamp(1rem, 3vw, 4rem);
-        --main-fs-text-small: clamp(0.9rem, 2.2vw, 5rem);
-        --main-fs-title: clamp(9rem, 16vw, 20rem);
-        --main-fs-subtitle: clamp(2rem, 3.8vw, 18rem);
-        --main-fs-subtitle-small: clamp(2rem, 3vw, 17rem);
-        --main-fs-button-big: clamp(3rem, 6vw, 10rem);
-        --main-fs-button-small: clamp(1.55rem, 3.5vw, 8rem);
+        --main-fs-text: clamp(1rem, 1.5vw, 4rem);
+        --main-fs-text-small: clamp(0.9rem, 1.4vw, 5rem);
+        --main-fs-title: clamp(4rem, 7vw, 20rem);
+        --main-fs-subtitle: clamp(2rem, 3vw, 18rem);
+        --main-fs-subtitle-small: clamp(2rem, 2vw, 17rem);
+        --main-fs-button-big: clamp(2rem, 3.5vw, 10rem);
+        --main-fs-button-small: clamp(1.55rem, 2vw, 8rem);
         /*LINE SPACING*/
-        --main-lh-title: clamp(6.5rem, 17vw, 15rem);
+        --main-lh-title: clamp(6.5rem, 8vw, 15rem);
         --main-lh-subtitle: clamp(3rem, 3vw, 5rem);
-        --main-lh-subtitle-small: clamp(2.5rem, 4.5vw, 5rem);
+        --main-lh-subtitle-small: clamp(2.5rem, 2vw, 5rem);
     }
 }

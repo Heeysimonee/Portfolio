@@ -300,8 +300,13 @@
         justify-content: center;
         flex: 0.1 auto;
     }
+    .cnt-form-heading h4{
+        padding-left: 5%;
+        width: 100%;
+    }
     .cnt-form-heading p {
         text-align: left;
+        padding-left: 5%;
     }
     .cnt-form-main{
         flex: auto;
@@ -338,5 +343,11 @@
     }
     .cnt-form-btn button{
         width: 100%;
+    }
+}
+@media screen and (min-width:769px) and (max-width: 1024px) and (orientation: landscape){
+   
+    .cnt-form-main{
+        padding: 0%;
     }
 }

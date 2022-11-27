@@ -271,3 +271,8 @@
         padding-left: 10%;
     }
 }
+@media screen and (min-width:769px) and (max-width: 1024px) and (orientation: landscape){
+    .sk-btn{
+        width: 100%;
+    }
+}
