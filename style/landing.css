@@ -182,7 +182,7 @@
     display: flex;
 }
 .main-hello{
-    width: 100%;
+    width: max-content;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -197,8 +197,9 @@
     filter: drop-shadow(-5px -2px 0px rgba(4, 43, 102, 0.473));   
 }
 h1.title{
-    width: 100%;
+    width: max-content;
     margin-bottom: 5%;
+    padding: 0;
 }
 .subtitle-p{
     width: 100%;
@@ -208,7 +209,7 @@ h1.title{
     font-style: oblique;
     margin-bottom: 3%;
 }
-.p-fade{
+.subtitle-p-small{
     width: 30vw;
     font-family: 'Muli', sans-serif;
     color: var(--main-white);
@@ -219,6 +220,10 @@ h1.title{
     animation-fill-mode: forwards;
     margin-bottom: 5%;
     text-align: start;
+}
+.p-fade{
+    animation: fade 0.8s cubic-bezier(0.645, 0.045, 0.355, 1);
+    animation-fill-mode: forwards;
 }
 
 
@@ -353,7 +358,7 @@ h1.title{
     align-items: flex-start;
     gap: 5px;
     height: 100%;
-    width: 100%;
+    width: 20%;
     padding-top: 8.5%;
 }
 .line-wrap{
@@ -420,9 +425,10 @@ h1.title{
     }
     .main-hello h1{
         padding-bottom: 5%;
+        width: 100%;
     }
     
-    .main-hello .p-fade{
+    .main-hell .subtitle-p-small{
         width: 100%;
         padding: 10% 0;
     }
@@ -459,9 +465,10 @@ h1.title{
     }
     .main-hello h1{
         padding-bottom: 5%;
+        width: 100%;
     }
     
-    .main-hello .p-fade{
+    .main-hello .subtitle-p-small{
         width: 100%;
         padding: 5% 0 0 0;
     }
@@ -497,7 +504,10 @@ h1.title{
     .main{
         padding: 10%;
     } 
-    .main-hello .p-fade{
+    .main-hello h1{
+        width: 100%;
+    }
+    .main-hello .subtitle-p-small{
         width: 100%;
         padding: 0%;
     }
@@ -534,6 +544,9 @@ h1.title{
         width: 18px;
         height: 18px;
     }
+    .main-hello h1{
+        width: 100%;
+    }
 }
 @media screen and (min-width:769px) and (max-width: 1024px) and (orientation: landscape){
     .menu{
@@ -555,10 +568,13 @@ h1.title{
     .main-hello{
         width: 100%;
     }
+    .main-hello h1{
+        width: 100%;
+    }
     .subtitle-p{
         width: 80%;
     }
-    .p-fade{
+    .subtitle-p-small{
         width: 60%;
         padding: 0%;
     }
